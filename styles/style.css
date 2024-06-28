@@ -393,15 +393,6 @@ text-transform: uppercase;
   bottom: 0px;
 }
 
-.close:hover::after,
-.footer_button:hover::after {
-  transform: scale(1, 1);
-}
-
-.close {
-  position: relative;
-}
-
 .footer {
   display: flex;
   align-items: center;
@@ -453,6 +444,7 @@ margin-top: 18px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
   text-transform: uppercase;
+  position: relative;
 }
 
 .close_text {
