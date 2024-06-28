@@ -38,6 +38,13 @@
   padding-top: 120px;
 }
 
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: 'Inter-Variable', sans-serif;
+      font-size: 18px;
+  }
+}
+
 .header_logo {
   font-size: 65px;
   font-weight: 400;
