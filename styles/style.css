@@ -124,8 +124,8 @@ text-transform: uppercase;
 
 .main_tittle_text {
   font-family: "Inter-Variable", sans-serif;
+  font-variation-settings: 'wgth' 700;
   font-size: 18px;
-  font-weight: 700;
   line-height: 21.78px;
   text-align: left;
   background-color: var(--background-color);
@@ -166,8 +166,8 @@ text-transform: uppercase;
 
 .main_text {
   font-family: "Inter-Variable", sans-serif;
+  font-variation-settings: 'wgth' 400;
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
   text-align: left;
   background-color: var(--background-color);
@@ -194,6 +194,7 @@ text-transform: uppercase;
   width: 100%;
   height: 100%;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -210,11 +211,6 @@ text-transform: uppercase;
   position: relative;
   cursor: pointer;
 }
-
-.button_hover:hover::after {
-  transform: scale(1, 1);
-}
-
 
 .footer_image, 
 .button__text {
@@ -271,10 +267,6 @@ text-transform: uppercase;
   transform: scale(1, 1);
 }
 
-.like-icon {
-  cursor: pointer;
-}
-
 .sparks {
   fill: var(--color-heart);
   opacity: 0;
@@ -282,12 +274,12 @@ text-transform: uppercase;
 
 .main-body {
   fill: var(--color-heart-2);
-  transition: fill 0.3s linear; 
+  transition: fill 0.3s linear;
 }
 
 .core {
   fill: var(--color-heart-2);
-  transition: fill 0.3s linear .03s; 
+  transition: fill 0.3s linear .03s;
 }
 
 .contour {
@@ -296,37 +288,37 @@ text-transform: uppercase;
 
 .card__icon-button:hover .main-body {
   fill: var(--accent-color);
-  transition: fill 0.3s linear 0.05s; 
+  transition: fill 0.3s linear 0.05s;
 }
 
-.card__icon-button:hover .core { 
+.card__icon-button:hover .core {
   fill: var(--accent-color);
-  transition: fill 0.3s linear; 
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .main-body {
   fill: var(--color-heart);
-  transition: fill .3s linear .05s; 
+  transition: fill .3s linear .05s;
 }
 
 .card__icon-button:active .core {
   fill: var(--color-heart);
-  transition: fill .3s linear; 
+  transition: fill .3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--color-heart);
-  transition: fill 0.3s linear .05s; 
+  transition: fill 0.3s linear .05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--color-heart);
-  transition: fill 0.3s linear; 
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--color-heart);
-  transition: fill 0.3s linear 0.06s; 
+  transition: fill 0.3s linear 0.06s;
 }
 
 .is-liked .heart {
@@ -476,7 +468,7 @@ dialog::backdrop {
 }
 
 .img-4 {
-  filter: hue-rotate(30deg); 
+  filter: hue-rotate(30deg);
 }
 
 .img-5 {
