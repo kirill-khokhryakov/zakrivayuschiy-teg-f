@@ -137,11 +137,6 @@ text-transform: uppercase;
   margin-top: 27px;
 }
 
-.section_image_text {
-  position: absolute;
-  z-index: 1;
-}
-
 .section_image {
   max-height: 705px;
   width: 100%;
@@ -158,6 +153,7 @@ text-transform: uppercase;
   font-weight: 400;
   line-height: 14px;
   color: var(--main-text-color);
+  z-index: 1;
 }
 
 @supports((text-stroke: 1px var(--border-shadow-color)) or (-webkit-text-stroke: 1px var(--border-shadow-color))) {
@@ -213,19 +209,6 @@ text-transform: uppercase;
   transition: all 0.5s;
   position: relative;
   cursor: pointer;
-}
-
-.button_hover::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: var(--accent-color);
-  position: absolute;
-  left: 0;
-  transform: scale(0, 1);
-  transition: transform 0.6s ease-in-out;
-  transform-origin: 0 0;
-  bottom: 0px;
 }
 
 .button_hover:hover::after {
@@ -326,7 +309,7 @@ text-transform: uppercase;
   transition: fill .3s linear .05s; 
 }
 
-.card__icon-button:active .core { 
+.card__icon-button:active .core {
   fill: var(--color-heart);
   transition: fill .3s linear; 
 }
@@ -336,12 +319,12 @@ text-transform: uppercase;
   transition: fill 0.3s linear .05s; 
 }
 
-.like-icon.is-liked .core { 
+.like-icon.is-liked .core {
   fill: var(--color-heart);
   transition: fill 0.3s linear; 
 }
 
-.like-icon.is-liked .contour { 
+.like-icon.is-liked .contour {
   fill: var(--color-heart);
   transition: fill 0.3s linear 0.06s; 
 }
