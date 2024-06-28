@@ -4,3 +4,64 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --accent-color: black;
+  --background-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(0, 0, 0, 1);
+  --background-image: 
+  repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+  linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
+  --main-text-color: rgba(0, 0, 0, 0.5);
+  --border-shadow-color: rgba(255, 255, 255, 0.5);
+  --button-text-color: white;
+  --color-heart: rgb(255 0 0);
+  --color-heart-2: rgba(256, 0, 0, 0);
+
+}
+
+:root.theme-dark {
+  --background-image: 
+  repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+  repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+  linear-gradient(to bottom, #007f0c 0.01%, #004306);  --accent-color: black;
+  --accent-color: rgba(0, 204, 20, 1);
+  --background-color: rgba(0, 0, 0, 1);
+  --text-color: rgba(0, 204, 20, 1);
+  --button-text-color: rgba(0, 204, 20, 1);
+  --main-text-color: rgba(0, 204, 20, 0.5);
+  --border-shadow-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: black;
+    --background-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(0, 0, 0, 1);
+    --background-image: 
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
+    --main-text-color: rgba(0, 0, 0, 0.5);
+    --border-shadow-color: rgba(255, 255, 255, 0.5);
+    --button-text-color: white;
+    --color-heart: rgb(255 0 0);
+    --color-heart-2: rgba(256, 0, 0, 0);
+  }
+
+}@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: 
+    repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);  --accent-color: black;
+    --accent-color: rgba(0, 204, 20, 1);
+    --background-color: rgba(0, 0, 0, 1);
+    --text-color: rgba(0, 204, 20, 1);
+    --button-text-color: rgba(0, 204, 20, 1);
+    --main-text-color: rgba(0, 204, 20, 0.5);
+
+    --border-shadow-color: rgba(0, 0, 0, 0.5);
+  }
+}

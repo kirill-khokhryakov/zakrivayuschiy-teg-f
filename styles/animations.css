@@ -12,3 +12,42 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes pulse {
+  0% {
+    left: -14px;
+  }
+
+  50% {
+    left: -10px;
+  }
+
+  100% {
+    left: -14px;
+  }
+}
+
+
+
+
+@keyframes like-skale {
+  0% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes like-shine {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
