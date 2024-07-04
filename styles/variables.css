@@ -11,6 +11,8 @@
   --border-shadow-color: rgba(255, 255, 255, 0.5);
   --button-text-color: white;
   --color-heart: rgb(255 0 0);
-  --color-heart-2: rgba(256, 0, 0, 0);;
+  --color-heart-2: rgba(256, 0, 0, 0);
+  --header-font-weight: 700;
+  --main-font-weight: 400;
 
 }
