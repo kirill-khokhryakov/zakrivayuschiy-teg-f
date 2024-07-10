@@ -34,7 +34,7 @@
   --main-text-color: rgba(0, 204, 20, 0.5);
   --border-shadow-color: rgba(0, 0, 0, 0.5);
   --header-font-weight: 785;
-  --main-font-weight: 455;
+  --main-font-weight: 465;
 
 }
 
@@ -69,6 +69,6 @@
     --main-text-color: rgba(0, 204, 20, 0.5);
     --border-shadow-color: rgba(0, 0, 0, 0.5);
     --header-font-weight: 785;
-    --main-font-weight: 455;
+    --main-font-weight: 465;
   }
 }

@@ -30,7 +30,7 @@
   border: 2px solid var(--accent-color);
   color: var(--text-color);
   display: flex;
-  gap: 20px;
+  gap: 12px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,6 +56,7 @@ font-size: 23px;
 font-weight: 400;
 line-height: 23px;
 text-transform: uppercase;
+
 }
 
 .theme-menu__list {
@@ -121,6 +122,8 @@ text-transform: uppercase;
 
 .main_image {
   position: relative;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .main_card {
@@ -145,7 +148,7 @@ text-transform: uppercase;
 .section_image {
   max-height: 705px;
   width: 100%;
-  display: block
+  display: block;
 }
 
 .section_image_text {
@@ -361,32 +364,10 @@ text-transform: uppercase;
   transition: all 0.5s;
   position: relative;
   cursor: pointer;
+  padding: 0 15px 0 4px;
 }
 
 
-.button_end::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: var(--accent-color);
-  position: absolute;
-  left: 0;
-  transform: scale(0, 1);
-  transition: transform 0.6s ease-in-out;
-  transform-origin: 0 0;
-  bottom: 0px;
-}
-
-.button_end:hover::after {
-  transform: scale(1, 1);
-}
-
-
-.button_end:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: all 0.5s;
-}
 
 .footer {
   display: flex;
@@ -451,6 +432,7 @@ text-transform: uppercase;
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  margin-top: 30px;
 }
 
 .close_text {
@@ -492,7 +474,7 @@ dialog::backdrop {
   filter: saturate(300%) hue-rotate(80deg) grayscale(10%) invert(26%) blur(3px);
 }
 
-@media (450px > width) {
+@media (469px > width) {
   .page {
     width: 100%;
 
@@ -512,10 +494,6 @@ dialog::backdrop {
     padding-bottom: 22px;
   }
 
-  .header_tittle {
-    margin-top: -10px;
-    margin-bottom: -8px;
-  }
 
   .main_tittle {
     padding-right: 10px;
@@ -535,10 +513,11 @@ dialog::backdrop {
     height: 28px;
     margin: 0 0 -5px 0;
   }
+
+  .section_image_text {
+    top: 20px;
+    right: 10px;
+  }
 }
-
-
-
-
 
 
