@@ -492,6 +492,7 @@ dialog::backdrop {
   .header {
     padding-top: 110px;
     padding-bottom: 22px;
+    gap: 12px;
   }
 
 
@@ -519,9 +520,6 @@ dialog::backdrop {
     right: 10px;
   }
 
-  .header {
-    gap: 12px;
-  }
 }
 
 
